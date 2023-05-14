@@ -2,7 +2,13 @@ import React, { useState } from "react";
 
 
 function Project() {
-    return <h1>Projects</h1>;
+    return (
+        <div className="max-h-screen px-10 bg-blue-500" >
+            <h1>Projects</h1>
+        </div>
+
+    )
+
 }
 
 export default Project;
