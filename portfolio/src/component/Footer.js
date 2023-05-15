@@ -30,14 +30,14 @@ function Footer() {
     ];
 
     return (
-        <div className="max-h-screen bg-black text-white px-10 py-10 flex flex-col justify-between items-center font-signature text-justify-center text-lg">
-            <ul name="footer" className="flex justify-between">
+        <div name='footer' className="max-h-screen bg-black text-white text-lg px-10 py-10 flex flex-col justify-between items-center font-signature text-justify-center ">
+            <ul name="footer" className="flex justify-between py-20">
                 {links.map(({ id, child, href, download }) => (
                     <li
                         key={id}
                         className="flex justify-between px-3 cursor-pointer hover:scale-105 duration-200"
                     >
-                        <a href={href} download={download} target="_blank">
+                        <a href={href} download={download} target="_blank" rel="noreferrer">
                             {child}
                         </a>
                     </li>
