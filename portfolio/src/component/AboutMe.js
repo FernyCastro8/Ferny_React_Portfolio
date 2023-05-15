@@ -10,8 +10,8 @@ function AboutMe() {
                     </p>
                 </div>
 
-                <p className="text-xl mt-20">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus, delectus nobis tempore provident unde eveniet distinctio at expedita atque omnis nemo? Provident quas aliquid ea debitis, id recusandae. Dolores!
+                <p className="text-xl mt-15">
+                    I am an enthusiastic individual who, as a kid, grew up playing sports. This experience helped me develop discipline and other valuable qualities. Through sports, I learned the importance of dedication, teamwork, and perseverance. The challenges and victories on the field instilled in me a strong work ethic and a drive to continuously improve. As a hobby, I also engage in weightlifting to maintain a healthy balance and indulge in my favorite restaurants.
                 </p>
 
                 <br />

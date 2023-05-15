@@ -30,7 +30,7 @@ function Footer() {
     ];
 
     return (
-        <div name='footer' className="max-h-screen bg-black text-white text-lg px-10 py-10 flex flex-col justify-between items-center font-signature text-justify-center ">
+        <div name='footer' className="max-h-screen bg-black text-white text-lg px-10 py-10 flex flex-col justify-between items-center font-signature text-justify-center pt-10">
             <ul name="footer" className="flex justify-between py-20">
                 {links.map(({ id, child, href, download }) => (
                     <li
