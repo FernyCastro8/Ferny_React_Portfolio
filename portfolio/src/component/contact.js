@@ -6,7 +6,7 @@ function Contact() {
 
             <div name='contact' className=" w-full h-screen flex flex-col justify-center items-center p-5" >
 
-                <p className="text-4xl font-signature p-4 border-b-4 border-gray-500">Contact</p>
+                <p className="text-4xl font-signature  border-b-4 border-gray-500">Contact</p>
 
                 <form action="" className="flex flex-col items-center w-full md:w-1/2 pt-5 ">
                     <input

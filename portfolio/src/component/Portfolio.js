@@ -4,7 +4,7 @@ import Note_taker_1 from '../assets/Note_Taker_1.webp';
 
 
 
-function Project() {
+function Portfolio() {
 
     const projects = [
         {
@@ -31,7 +31,7 @@ function Project() {
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full  h-full">
                 <div className="pb-8">
 
-                    <p className="text-4xl font-signature font-bold inline border-b-4 border-gray-500">Project</p>
+                    <p className="text-4xl font-signature font-bold inline border-b-4 border-gray-500">Portfolio</p>
                 </div>
 
 
@@ -101,4 +101,4 @@ function Project() {
 
 }
 
-export default Project;
+export default Portfolio;
