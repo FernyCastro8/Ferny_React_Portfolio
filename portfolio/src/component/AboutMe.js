@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function AboutMe() {
     return (
-        <div name='about-me' className="h-screen w-full bg-gradient-to-t from-black to-gray-900 via-gray-950 text-white">
+        <div name='about' className="h-screen w-full bg-gradient-to-t from-black to-gray-900 via-gray-950 text-white">
 
             <div className="max-w-screen-lg p-10 mx-auto flex flex-col justify-center w-full h-full">
                 <div className="pb-8">

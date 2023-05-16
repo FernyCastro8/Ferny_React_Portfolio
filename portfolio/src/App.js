@@ -1,6 +1,7 @@
 import './App.css';
 import './index.css'
 import { Routes, Route, Navigate } from 'react-dom';
+import { Navelink } from 'react-router-dom';
 
 
 import Navbar from './component/Navbar';
