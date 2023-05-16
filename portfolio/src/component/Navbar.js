@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from 'react-icons/fa'
-
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 function Navbar() {
-    const [nav, setNav] = useState(false)
+    const [nav, setNav] = useState(false);
+    // const [contact, setContact] = use(false);
 
     // array of obj
     const links = [
