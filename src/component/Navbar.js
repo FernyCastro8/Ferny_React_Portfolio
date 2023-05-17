@@ -7,22 +7,22 @@ function Navbar() {
 
     const links = [
         {
-            id: 2,
+            id: 1,
             link: 'about',
             target: 'about',
         },
         {
-            id: 3,
+            id: 2,
             link: 'portfolio',
             target: 'portfolio',
         },
         {
-            id: 4,
+            id: 3,
             link: 'contact',
             target: 'contact',
         },
         {
-            id: 5,
+            id: 4,
             link: 'links',
             target: 'links',
         }
