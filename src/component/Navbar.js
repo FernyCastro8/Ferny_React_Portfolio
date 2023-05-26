@@ -7,22 +7,22 @@ function Navbar() {
 
     const links = [
         {
-            id: 1,
+            id: 0,
             link: 'about',
             target: 'about',
         },
         {
-            id: 2,
+            id: 1,
             link: 'portfolio',
             target: 'portfolio',
         },
         {
-            id: 3,
+            id: 2,
             link: 'contact',
             target: 'contact',
         },
         {
-            id: 4,
+            id: 3,
             link: 'links',
             target: 'links',
         }
@@ -31,9 +31,8 @@ function Navbar() {
     return (
         <header name="navbar" className="max-h-screen px-10 bg-black text-white capitalize">
             <nav className="flex justify-between py-10 pb-8">
-                {/* <h1 className="text-xl font-signature hover:scale-110 duration-200">Ferny Castro</h1> */}
                 <span className="logo-container hidden md:block ">
-                    <a href="">
+                    <a href=" ">
                         <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjoxMTQsInciOjIwMDAsImZzIjo1NywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiMzNTNENEIiLCJ0IjoxfQ/RkM/emotional-rescue-personal-use-regular.png" alt="logo" />
                     </a>
                 </span>
