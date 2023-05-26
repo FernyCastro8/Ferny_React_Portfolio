@@ -10,7 +10,7 @@ import AboutME from './component/AboutMe';
 import Portfolio from './component/Portfolio';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
-
+import Footer_Flowbite from './component/Footer_Flowbite';
 
 function App() {
   return (
@@ -26,7 +26,9 @@ function App() {
 
       <Contact />
 
-      <Footer />
+      {/* <Footer /> */}
+
+      <Footer_Flowbite />
 
     </div>
   );

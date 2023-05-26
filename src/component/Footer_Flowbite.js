@@ -43,7 +43,7 @@ function Footer_Flowbite() {
 
                         <ul className="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             {links.map(({ id, child, href, download }) => (
-                                <li key={id} className="mr-4 hover:underline md:mr-6 cursor-pointer hover:scale-110 duration-200">
+                                <li key={id} className="mr-4 md:mr-6 cursor-pointer hover:scale-110 duration-200">
                                     <a href={href} download={download}>
                                         {child}
                                     </a>
