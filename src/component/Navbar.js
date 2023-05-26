@@ -7,6 +7,11 @@ function Navbar() {
 
     const links = [
         {
+            id: 0,
+            link: '',
+            target: '',
+        },
+        {
             id: 1,
             link: 'about',
             target: 'about',
@@ -31,10 +36,9 @@ function Navbar() {
     return (
         <header name="navbar" className="max-h-screen px-10 bg-black text-white capitalize">
             <nav className="flex justify-between py-10 pb-8">
-                <span className="logo-container hidden md:block ">
+                <span>
                     <a href=" ">
-                        <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjoxMTQsInciOjIwMDAsImZzIjo1NywiZmdjIjoiI0ZGRkZGRiIsImJnYyI6IiMzNTNENEIiLCJ0IjoxfQ/RkM/emotional-rescue-personal-use-regular.png" alt="logo" />
-                    </a>
+                        <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/RkM/emotional-rescue-personal-use-regular.png" alt="Cursive fonts" /></a>
                 </span>
 
                 <ul className="hidden md:flex items-center text-md cursor-pointer font-medium">
@@ -79,6 +83,11 @@ function Navbar() {
                     ))}
                 </ul>
             )}
+
+            {/* <span>
+                <a href=" ">
+                    <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/RkM/emotional-rescue-personal-use-regular.png" alt="Cursive fonts" /></a>
+            </span> */}
         </header>
     );
 }
