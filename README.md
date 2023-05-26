@@ -78,7 +78,9 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 🔗 [Github](https://github.com/FernyCastro8)
 
-🔗 [Linkedin]()
+🔗 [Linkedin](https://www.linkedin.com/in/ferny-castro/)
+
+🔗 [Website]()
 
 
 ---
@@ -93,5 +95,3 @@ Copyright (c) 2023 Ferny Castro
 ---
 
 ### Demo
-
-🔗 [Github-repo](https://github.com/FernyCastro8/Ferny_React_Portfolio.git)

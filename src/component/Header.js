@@ -21,7 +21,7 @@ function Header() {
 
                     <p className="text-gray-400 py-4">
                         Hello, I go by the name of Ferny Castro. I'm a passionate Web
-                        Deverloper building Web App from scratch using technology tools to
+                        Deverloper building Web Apps from scratch using technology tools to
                         illustrate my craft
                     </p>
 

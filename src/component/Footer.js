@@ -30,7 +30,9 @@ function Footer() {
     ];
 
     return (
-        <div name='links' className="max-h-screen bg-black text-white text-lg px-10 py-10 flex flex-col justify-between items-center font-signature text-justify-center pt-10">
+        <div name='links'
+            className="max-h-screen bg-black bg-gradient-to-b from-black to-gray-900 text-white text-lg px-10 py-10 flex flex-col justify-between items-center font-signature text-justify-center pt-10">
+
 
             <ul name="links" className="flex justify-between py-20">
                 {links.map(({ id, child, href, download }) => (
@@ -38,9 +40,7 @@ function Footer() {
                         key={id}
                         className="flex justify-between px-3 cursor-pointer hover:scale-105 duration-200"
                     >
-                        <a href={href} download={download} target="_blank" rel="noreferrer">
-                            {child}
-                        </a>
+                        <a href={href} download={download} target="_blank" rel="noreferrer">{child}</a>
                     </li>
                 ))}
             </ul>
