@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { HiArrowSmDown } from "react-icons/hi";
 import { Link } from "react-scroll";
 import profileImg from '../assets/profileImg_IMG_7122.webp';
