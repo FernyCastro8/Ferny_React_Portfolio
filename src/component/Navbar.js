@@ -39,21 +39,22 @@ function Navbar() {
     return (
         <header name="navbar" className="max-h-screen px-10 bg-black text-white capitalize">
             <nav className="flex justify-between py-10 pb-8 items-center">
-                <span className=" flex justify-center">
+                <span className="flex justify-center ">
                     <a href=" ">
-                        <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/RkM/emotional-rescue-personal-use-regular.png" alt="Cursive fonts" /></a>
+                        <img className="cursor-default" src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/RkM/emotional-rescue-personal-use-regular.png" alt="logo" /></a>
                 </span>
 
-                <ul className="hidden md:flex items-center text-md cursor-pointer font-medium">
+                <ul className="hidden md:flex items-center font-medium text-md cursor-pointer">
                     {links.map(({ id, link, target }) => (
-                        <li key={id}>
+                        <li key={id}
+                            className="rounded-md ml-8 px-4 border-none text-gray-400 hover:scale-105 duration-200"
+                        >
                             <Link
                                 to={target}
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
-                                className="rounded-md ml-8 px-4 border-none text-gray-400 hover:scale-105 duration-200"
                                 onClick={() => setNav(false)}
                             >
                                 {link}
