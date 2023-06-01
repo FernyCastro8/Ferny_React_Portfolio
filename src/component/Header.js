@@ -1,7 +1,9 @@
 // import React, { useState } from "react";
 import { HiArrowSmDown } from "react-icons/hi";
 import { Link } from "react-scroll";
+
 import profileImg from '../assets/profileImg_IMG_7122.webp';
+
 
 function Header() {
     return (
@@ -17,12 +19,15 @@ function Header() {
                 <br />
 
                 <div className="">
-                    <h2 className="tex-4ls sm:text-7xl font-signature">Full Stack Dev</h2>
+                    <p className="justify-start text-gray-400 text-2xl font-signature flex ">Hello, I go by the name of</p>
+                    <p className="text-white text-6xl font-signature py-4">Ferny Castro</p>
+
+                    <p className="text-2xl text-gray-300 font-signature">Im a Full Stack Developer</p>
 
                     <p className="text-gray-400 py-4">
-                        Hello, I go by the name of Ferny Castro. I'm a passionate Web
-                        Deverloper building Web Apps from scratch using technology tools to
-                        illustrate my craft
+                        I'm a passionate Web
+                        Deverloper building Web Apps from scratch using technology tools like to
+                        illustrate my craft. I specialize in all aspects of web development from front-end coding to back-end database development. My core skills include coding in JavaScript, React, and HTML/CSS. I also have experience with Node.js, Express, MongoDB, and MySQL.
                     </p>
 
                     <div className="flex justify-center">

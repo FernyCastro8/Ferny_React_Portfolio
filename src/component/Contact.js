@@ -26,7 +26,7 @@ function Contact() {
                     <input
                         type="text"
                         name="email"
-                        placeholder="Enter your email address"
+                        placeholder="Enter your email"
                         className="p-2 bg-gray-900 border-2 rounded-md text-white text-center focus:outline-none m-3" />
                     <textarea name=""
                         cols="40"
@@ -34,7 +34,7 @@ function Contact() {
                         placeholder="Enter your message"
                         className="p-2 bg-gray-900 border-2 rounded-md text-white text-center focus:outline-none m-3">
                     </textarea >
-                    <button className="text-white bg-gray-500 m-3 px-5 rounded-md hover:scale-110 duration-300">Submit</button>
+                    <button className="text-white bg-gray-500 m-3 px-5 rounded-md hover:scale-110 hover:bg-slate-400 duration-300">Submit</button>
                 </form>
             </div>
         </div>

@@ -47,7 +47,7 @@ function Navbar() {
                 <ul className="hidden md:flex items-center font-medium text-md cursor-pointer">
                     {links.map(({ id, link, target }) => (
                         <li key={id}
-                            className="rounded-md ml-8 px-4 border-none text-gray-400 hover:scale-105 duration-200"
+                            className="rounded-md ml-8 px-4 border-none text-gray-400 hover:underline hover:text-white hover:scale-105 duration-200"
                         >
                             <Link
                                 to={target}
