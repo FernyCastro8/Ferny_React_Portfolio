@@ -1,9 +1,9 @@
 import React from "react";
 
 
-import Note_taker_1 from '../assets/Note_Taker_1.webp';
-import Social_media_api from '../assets/social-media-api.webp';
-import E_commerce from '../assets/E-commerce_backend.webp';
+import Note_taker_1 from '../assets/projects/Note_Taker_1.webp';
+import Social_media_api from '../assets/projects/social-media-api.webp';
+import E_commerce from '../assets/projects/E-commerce_backend.webp';
 
 
 function Portfolio() {

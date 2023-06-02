@@ -6,6 +6,7 @@ import JavaScript_logo from '../assets/skills/jslogo.png';
 import Nodejs_logo from '../assets/skills/nodelogo.png';
 import Reactjs_logo from '../assets/skills/reactlogo.png';
 import Mongo_logo from '../assets/skills/mongologo.png';
+import Mysql_logo from '../assets/skills/mysql_logo.png'
 import Tailwind_logo from '../assets/skills/tailwindlogo.png';
 import Terminal_logo from '../assets/skills/terminallogo.png';
 import Githug_logo from '../assets/skills/github-mark.png';
@@ -55,8 +56,8 @@ function Skills() {
         },
         {
             id: 7,
-            title: 'MongoDB',
-            src: HTML_logo,
+            title: 'Mysql',
+            src: Mysql_logo,
             style: 'shadow-gray-500'
         },
         {
@@ -76,21 +77,22 @@ function Skills() {
             title: 'Github',
             src: Githug_logo,
             style: 'shadow-gray-500'
-        },
+        }
     ]
 
     return (
+
         <div title='skills'
             className="w-full bg-black" >
 
-            <div className="max-w-screen-lg mx-auto w-full  flex flex-col justify-center p-4 text-white">
+            <section className="max-w-screen-lg mx-auto w-full  flex flex-col justify-center p-4 text-white">
 
                 <div>
                     <p className="text-4xl font-signature  border-b-4 border-gray-500 inline">Skills</p>
                     <p className="text-gray-300 py-6">Techlogies I've worked with</p>
                 </div>
 
-                <div className="w-full grid grid-cols-2  ms:grid-col-3 gap-8 text-center py-8 px-12 ms:px-0 pt-2">
+                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-6 ms:px-0 pt-2">
                     {skills.map(({ id, title, src, style }) => (
                         <div className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
                             <img key={id} src={src} alt="" className="w-20 mx-auto" />
@@ -99,7 +101,7 @@ function Skills() {
                     ))}
                 </div>
 
-            </div>
+            </section>
 
         </div>
     )

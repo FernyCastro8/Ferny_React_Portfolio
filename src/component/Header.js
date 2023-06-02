@@ -22,7 +22,7 @@ function Header() {
                     <p className="justify-start text-gray-400 text-2xl font-signature flex ">Hello, I go by the name of</p>
                     <p className="text-white text-6xl font-signature py-4">Ferny Castro</p>
 
-                    <p className="text-2xl text-gray-300 font-signature">Im a Full Stack Developer</p>
+                    <p className="text-2xl text-gray-300 font-signature ">I'm a Full Stack Developer</p>
 
                     <p className="text-gray-400 py-4">
                         I'm a passionate Web

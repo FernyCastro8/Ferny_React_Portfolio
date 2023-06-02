@@ -16,7 +16,7 @@ function Contact() {
                 {/* Getfrom.io  liks to personal email */}
                 <form method="POST"
                     action="https://getform.io/f/165e4406-11de-4b15-b649-4bc5f1eff271"
-                    className="flex flex-col items-center w-full md:w-1/2 pt-5 ">
+                    className="flex flex-col items-center w-full lg:pb-6 md:w-1/2 pt-5 ">
 
                     <input
                         type="text"
