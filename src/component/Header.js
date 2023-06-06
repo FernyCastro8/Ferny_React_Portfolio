@@ -12,8 +12,9 @@ function Header() {
             className="h-screen w-full bg-black bg-gradient-to-b from-black via-neutral-800 to-gray-900 text-white px-10"
         >
             <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
-                <div>
-                    <img src={profileImg} alt="profile img" />
+                <div >
+                    {/* try to make the img round */}
+                    <img src={profileImg} alt="profile img" className="opacity-80 rounded-full" />
                 </div>
 
                 <br />
