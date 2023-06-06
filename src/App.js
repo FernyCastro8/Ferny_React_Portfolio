@@ -10,8 +10,8 @@ import AboutME from './component/AboutMe';
 import Portfolio from './component/Portfolio';
 import Skilss from './component/Skills';
 import Contact from './component/Contact';
-// import Footer from './component/Footer';
-import Footer_Flowbite from './component/Footer_Flowbite';
+import Footer from './component/Footer';
+// import Footer_2 from './component/Footer_2';
 
 function App() {
   return (
@@ -29,9 +29,9 @@ function App() {
 
       <Contact />
 
-      {/* <Footer /> */}
+      <Footer />
 
-      <Footer_Flowbite />
+      {/* <Footer_2 /> */}
 
     </div>
   );
