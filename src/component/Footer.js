@@ -44,12 +44,15 @@ function Footer() {
                     <div className="sm:flex sm:items-center sm:justify-between justify-center">
                         <div className="flex flex-col items-center mb-4 sm:mb-0 py-3">
                             <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjoyNDYsInciOjIwMDAsImZzIjoxMjMsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMzUzRDRCIiwidCI6MX0/RkM/emotional-rescue-personal-use-regular.png" className="h-8 mr-3" alt="Ferny Castro Logo" />
-                            <span className="self-center text-2xl whitespace-nowrap dark:text-gray-400 font-signature">Ferny Castro</span>
+                            <span className="self-center text-2xl whitespace-nowrap dark:text-gray-400 font-signature">
+                                Ferny Castro
+                            </span>
                         </div>
 
                         <ul className="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             {links.map(({ id, child, href, download }) => (
-                                <li key={id} className="mr-4 md:mr-6 cursor-pointer hover:scale-110 duration-200 hover:text-white">
+                                <li key={id}
+                                    className="mr-4 md:mr-6 cursor-pointer hover:scale-110 duration-200 hover:text-white">
                                     <a href={href} download={download}>
                                         {child}
                                     </a>
