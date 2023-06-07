@@ -10,70 +10,74 @@ import Mysql_logo from '../assets/skills/mysql_logo.png'
 import Tailwind_logo from '../assets/skills/tailwindlogo.png';
 import Terminal_logo from '../assets/skills/terminallogo.png';
 import Githug_logo from '../assets/skills/github-mark.png';
-
-
-
+import NPM_logo from '../assets/skills/npm_logo.png';
 
 
 function Skills() {
 
     const skills = [
         {
-            id: 1,
+
             title: 'HTML',
             src: HTML_logo,
             style: 'shadow-gray-500'
         },
         {
-            id: 2,
+
             title: 'CSS',
             src: CSS_logo,
             style: 'shadow-gray-500'
         },
         {
-            id: 3,
+
             title: 'JavaScript',
             src: JavaScript_logo,
             style: 'shadow-gray-500'
         },
         {
-            id: 4,
+
             title: 'Nodejs',
             src: Nodejs_logo,
             style: 'shadow-gray-500'
         },
         {
-            id: 5,
+
             title: 'React js',
             src: Reactjs_logo,
             style: 'shadow-gray-500'
         },
         {
-            id: 6,
+
             title: 'MongoDB',
             src: Mongo_logo,
             style: 'shadow-gray-500'
         },
         {
-            id: 7,
+
             title: 'Mysql',
             src: Mysql_logo,
             style: 'shadow-gray-500'
         },
         {
-            id: 8,
+
             title: 'Tailwind CSS',
             src: Tailwind_logo,
             style: 'shadow-gray-500'
         },
         {
-            id: 9,
+
+            title: 'NPM',
+            src: NPM_logo,
+            style: 'shadow-gray-500'
+        },
+        {
+
             title: 'Terminal',
             src: Terminal_logo,
             style: 'shadow-gray-500'
         },
+
         {
-            id: 10,
             title: 'Github',
             src: Githug_logo,
             style: 'shadow-gray-500'
@@ -93,9 +97,9 @@ function Skills() {
                 </div>
 
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-6 ms:px-0 pt-2">
-                    {skills.map(({ id, title, src, style }) => (
+                    {skills.map(({ index, title, src, style }) => (
                         <div className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                            <img key={id} src={src} alt="" className="w-20 mx-auto" />
+                            <img key={index} src={src} alt="" className="w-20 mx-auto" />
                             <p className="mt-4">{title}</p>
                         </div>
                     ))}
