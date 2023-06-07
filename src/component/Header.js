@@ -1,6 +1,6 @@
 import React from "react";
 import { HiArrowSmDown } from "react-icons/hi";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import profileImg from '../assets/profileImg_IMG_7122.webp';
