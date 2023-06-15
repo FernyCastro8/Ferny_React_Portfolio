@@ -1,5 +1,6 @@
 import React from "react";
 
+// skill logo imports
 import HTML_logo from '../../src/assets/skills/htmllogo.png';
 import CSS_logo from '../assets/skills/csslogo.png';
 import JavaScript_logo from '../assets/skills/jslogo.png';

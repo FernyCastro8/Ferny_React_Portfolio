@@ -3,10 +3,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiFillFolder } from 'react-icons/ai';
 
+// Importing resume
 import resume_pdf from '../assets/resume/Ferny_Castro_Resume.pdf'
 
 function Footer() {
 
+    //  looping over the links
     const links = [
         {
             id: 1,
@@ -34,12 +36,11 @@ function Footer() {
     return (
 
         // footer from flowbite.com library
-
         <footer name="links" className="bg-black p-10 bg-gradient-to-b from-black to-gray-900 max-h-fit ">
 
             <p className="text-4xl font-signature text-white border-b-4 border-gray-500 inline-block lg:pt-5">Links</p>
 
-            <div>
+            <section>
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between justify-center">
                         <div className="flex flex-col items-center mb-4 sm:mb-0 py-3">
@@ -65,7 +66,7 @@ function Footer() {
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
                 <span className="block text-sm text-gray-500 text-center dark:text-gray-400 pt-3">© 2023 <a href="/" className="hover:underline">Ferny Castro™</a>. All Rights Reserved.</span>
-            </div>
+            </section>
         </footer>
     );
 }
