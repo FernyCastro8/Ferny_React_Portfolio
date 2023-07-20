@@ -9,9 +9,9 @@ import Reactjs_logo from '../assets/skills/reactlogo.png';
 import Mongo_logo from '../assets/skills/mongologo.png';
 import Mysql_logo from '../assets/skills/mysql_logo.png'
 import Tailwind_logo from '../assets/skills/tailwindlogo.png';
-import Terminal_logo from '../assets/skills/terminallogo.png';
-import Githug_logo from '../assets/skills/github-mark.png';
-import NPM_logo from '../assets/skills/npm_logo.png';
+// import Terminal_logo from '../assets/skills/terminallogo.png';
+// import Githug_logo from '../assets/skills/github-mark.png';
+// import NPM_logo from '../assets/skills/npm_logo.png';
 
 
 function Skills() {
@@ -65,24 +65,24 @@ function Skills() {
             src: Tailwind_logo,
             style: 'shadow-gray-500'
         },
-        {
+        // {
 
-            title: 'NPM',
-            src: NPM_logo,
-            style: 'shadow-gray-500'
-        },
-        {
+        //     title: 'NPM',
+        //     src: NPM_logo,
+        //     style: 'shadow-gray-500'
+        // },
+        // {
 
-            title: 'Terminal',
-            src: Terminal_logo,
-            style: 'shadow-gray-500'
-        },
+        //     title: 'Terminal',
+        //     src: Terminal_logo,
+        //     style: 'shadow-gray-500'
+        // },
 
-        {
-            title: 'Github',
-            src: Githug_logo,
-            style: 'shadow-gray-500'
-        }
+        // {
+        //     title: 'Github',
+        //     src: Githug_logo,
+        //     style: 'shadow-gray-500'
+        // }
     ]
 
     return (

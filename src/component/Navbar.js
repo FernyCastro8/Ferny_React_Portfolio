@@ -8,7 +8,7 @@ function Navbar() {
     const [nav, setNav] = useState(false);
 
     const links = [
-        {
+        {   // looping over the logo
             id: 0,
             logo: [
                 <span>
@@ -43,13 +43,16 @@ function Navbar() {
             id: 5,
             link: 'resume',
             target: 'resume',
-            // on click funtion to enable the download option for Resume
-            onClick: () => {
-                const link = document.createElement('a');
-                link.href = resume_pdf;
-                link.download = 'Ferny_Castro_Resume.pdf';
-                link.click();
-            }
+            href: resume_pdf,
+            download: 'RESUME_wd_FernyCastro.pdf'
+
+            // // on click funtion to enable the download option for Resume
+            // onClick: () => {
+            //     const link = document.createElement('a');
+            //     link.href = resume_pdf;
+            //     link.download = 'RESUME_wd_FernyCastro.pdf';
+            //     link.click();
+            // }
         }
     ];
 
@@ -63,7 +66,7 @@ function Navbar() {
                 </span>
 
                 <ul className="hidden md:flex items-center font-medium text-md cursor-pointer">
-                    {links.map(({ id, link, target, onClick }) => (
+                    {links.map(({ id, link, target, href, download, onClick }) => (
                         <li
                             key={id}
                             className="rounded-md ml-8 px-4 border-none text-gray-400 hover:underline hover:text-white hover:scale-105 duration-200"
