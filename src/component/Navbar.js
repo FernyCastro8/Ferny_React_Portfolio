@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
-import resume_pdf from '../assets/resume/Ferny_Castro_Resume.pdf';
+import resume_pdf from '../assets/resume/RESUME_wd_FernyCastro.pdf';
 
 function Navbar() {
     const [nav, setNav] = useState(false);
