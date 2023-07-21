@@ -1,10 +1,11 @@
 import React from "react";
 
 // importing project images
+import fitnessFusion from '../assets/projects/fitnessfusion.png'
 import Note_taker_1 from '../assets/projects/Note_Taker_1.webp';
-import Social_media_api from '../assets/projects/social_media_api-1080x642.webp';
-import E_commerce from '../assets/projects/E-commerce_backend.webp';
-import E_commerce_png from '../assets/projects/E-commerce_backend(resized).png'
+// import Social_media_api from '../assets/projects/social_media_api-1080x642.webp';
+// import E_commerce from '../assets/projects/E-commerce_backend.webp';
+// import E_commerce_png from '../assets/projects/E-commerce_backend(resized).png'
 
 
 // Portfolio component Function
@@ -19,13 +20,13 @@ function Portfolio() {
         //     demoURL: 'https://note-taker-app-mod11.herokuapp.com/',
         //     codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git'
         // },
-        {
-            id: 1,
-            name: 'Social Media Api',
-            image: Social_media_api,
-            demoURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
-            codeURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git'
-        },
+        // {
+        //     id: 1,
+        //     name: 'Social Media Api',
+        //     image: Social_media_api,
+        //     demoURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
+        //     codeURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git'
+        // },
         {
             id: 2,
             name: 'Note Taker',
@@ -35,18 +36,18 @@ function Portfolio() {
         },
         {
             id: 3,
-            name: 'E-commerce backend API',
-            image: E_commerce_png,
-            demoURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git',
-            codeURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git'
+            name: 'Fitness Fusion',
+            image: fitnessFusion,
+            demoURL: 'https://github.com/FernyCastro8/fitness-fusion-workout-maker/tree/main',
+            codeURL: 'https://fernycastro8.github.io/fitness-fusion-workout-maker/'
         },
-        {
-            id: 4,
-            name: 'E-commerce backend API',
-            image: [E_commerce],
-            demoURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git',
-            codeURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git'
-        }
+        // {
+        //     id: 4,
+        //     name: 'E-commerce backend API',
+        //     image: [E_commerce],
+        //     demoURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git',
+        //     codeURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git'
+        // }
     ];
 
     return (
