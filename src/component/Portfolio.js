@@ -11,7 +11,7 @@ import Note_taker_1 from '../assets/projects/Note_Taker_1.webp';
 // Portfolio component Function
 function Portfolio() {
 
-    // looping over the pojects on the the project section
+    // looping over the pojects on the project section
     const projects = [
         // {
         //     id: 0,
@@ -20,29 +20,29 @@ function Portfolio() {
         //     demoURL: 'https://note-taker-app-mod11.herokuapp.com/',
         //     codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git'
         // },
-        // {
-        //     id: 1,
-        //     name: 'Social Media Api',
-        //     image: Social_media_api,
-        //     demoURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
-        //     codeURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git'
-        // },
         {
-            id: 2,
+            id: 1,
             name: 'Note Taker',
             image: Note_taker_1,
             demoURL: 'https://note-taker-app-mod11.herokuapp.com/',
             codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git'
         },
         {
-            id: 3,
+            id: 2,
             name: 'Fitness Fusion',
             image: fitnessFusion,
             demoURL: 'https://github.com/FernyCastro8/fitness-fusion-workout-maker/tree/main',
             codeURL: 'https://fernycastro8.github.io/fitness-fusion-workout-maker/'
         },
         // {
-        //     id: 4,
+        //     id: 3,
+        //     name: 'Social Media Api',
+        //     image: Social_media_api,
+        //     demoURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
+        //     codeURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git'
+        // },
+        // {
+        //     id: 4
         //     name: 'E-commerce backend API',
         //     image: [E_commerce],
         //     demoURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git',

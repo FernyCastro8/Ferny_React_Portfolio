@@ -7,8 +7,8 @@ import './index.css'
 import Navbar from './component/Navbar';
 import Header from './component/Header';
 import AboutME from './component/AboutMe';
-import Portfolio from './component/Portfolio';
-// import Portfolio_2 from './component/Portfolio_2';
+// import Portfolio from './component/Portfolio';
+import Portfolio_2 from './component/Portfolio_2';
 import Skilss from './component/Skills';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
@@ -27,9 +27,9 @@ function App() {
 
       <Skilss />
 
-      <Portfolio />
+      {/* <Portfolio /> */}
 
-      {/* <Portfolio_2 /> */}
+      <Portfolio_2 />
 
       <Contact />
 
