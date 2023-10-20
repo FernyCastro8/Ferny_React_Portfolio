@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { AiFillFolder } from 'react-icons/ai';
 
 // Importing resume
-import resume_pdf from '../assets/resume/RESUME_wd_FernyCastro.pdf'
+// import resume_pdf from '../assets/resume/RESUME_FernyCastro_Links.pdf'
 
 function Footer() {
 
@@ -28,8 +28,8 @@ function Footer() {
         {
             id: 4,
             child: <AiFillFolder size={30} />,
-            href: resume_pdf,
-            download: 'RESUME_wd_FernyCastro.pdf',
+            href: 'https://drive.google.com/file/d/1JB0TImnpD3KVmadcinyYf1ZDauDPzwVM/view?usp=sharing',
+            // download: 'RESUME_FernyCastro_Links.pdf',
         },
     ];
 

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
 
-import resume_pdf from '../assets/resume/RESUME_wd_FernyCastro.pdf';
 
 function Navbar() {
     const [nav, setNav] = useState(false);
@@ -39,40 +38,35 @@ function Navbar() {
             link: 'contact',
             target: 'contact',
         },
-        {
-            id: 5,
-            link: 'resume',
-            target: 'resume',
-            href: resume_pdf,
-            download: 'RESUME_wd_FernyCastro.pdf'
-
-            // // on click funtion to enable the download option for Resume
-            // onClick: () => {
-            //     const link = document.createElement('a');
-            //     link.href = resume_pdf;
-            //     link.download = 'RESUME_wd_FernyCastro.pdf';
-            //     link.click();
-            // }
-        }
+        // {
+        //     id: 5,
+        //     link: 'resume',
+        //     target: '',
+        //     href: 'https://drive.google.com/file/d/1JB0TImnpD3KVmadcinyYf1ZDauDPzwVM/view?usp=sharing',
+        // }
     ];
+
 
     return (
         <header name="navbar" className="max-h-screen px-10 bg-black text-white capitalize">
             <nav className="flex justify-between py-10 pb-8 items-center">
                 <span className="flex justify-center ">
-                    <a href=" ">
-                        <img className="cursor-default" src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/RkM/emotional-rescue-personal-use-regular.png" alt="logo" />
+                    <a href='/'>
+                        <img className="cursor-default"
+                            alt="logo"
+                            src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/RkM/emotional-rescue-personal-use-regular.png" />
                     </a>
                 </span>
 
                 <ul className="hidden md:flex items-center font-medium text-md cursor-pointer">
-                    {links.map(({ id, link, target, href, download, onClick }) => (
+                    {links.map(({ id, link, target, href, onClick }) => (
                         <li
                             key={id}
                             className="rounded-md ml-8 px-4 border-none text-gray-400 hover:underline hover:text-white hover:scale-105 duration-200"
                         >
                             {onClick ? (
-                                <a href="/" onClick={onClick} download>
+                                <a href={href}
+                                    onClick={onClick} >
                                     {link}
                                 </a>
                             ) : (
@@ -84,7 +78,7 @@ function Navbar() {
                                     duration={500}
                                     onClick={() => setNav(false)}
                                 >
-                                    {link}
+                                    <a href=""> {link}</a>
                                 </Link>
                             )}
                         </li>
@@ -117,6 +111,7 @@ function Navbar() {
                     ))}
                 </ul>
             )}
+
         </header>
     );
 }
