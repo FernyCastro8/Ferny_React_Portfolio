@@ -6,6 +6,31 @@ import { AiFillFolder } from 'react-icons/ai';
 // Importing resume
 import resume_pdf from '../assets/resume/RESUME_FernyCastro.pdf'
 
+function displayPDF() {
+    const url = 'https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view?usp=drive_link';
+    const pdfContainer = document.getElementById('pdf-container');
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.blob();
+        })
+        .then(blob => {
+            const pdfUrl = URL.createObjectURL(blob);
+            pdfContainer.innerHTML = `<iframe src="${pdfUrl}" width="100%" height="600px"></iframe>`;
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+}
+
+// Call the function to display the PDF
+displayPDF();
+
+console.log(displayPDF)
+
 function Footer() {
 
     //  looping over the links

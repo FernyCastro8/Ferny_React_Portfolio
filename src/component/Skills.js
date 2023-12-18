@@ -18,67 +18,68 @@ function Skills() {
 
     const skills = [
         {
-
+            id: 0,
             title: 'HTML',
             src: HTML_logo,
             style: 'shadow-gray-500'
         },
         {
-
+            id: 1,
             title: 'CSS',
             src: CSS_logo,
             style: 'shadow-gray-500'
         },
         {
-
+            id: 2,
             title: 'JavaScript',
             src: JavaScript_logo,
             style: 'shadow-gray-500'
         },
         {
-
+            id: 3,
             title: 'Nodejs',
             src: Nodejs_logo,
             style: 'shadow-gray-500'
         },
         {
-
+            id: 4,
             title: 'React js',
             src: Reactjs_logo,
             style: 'shadow-gray-500'
         },
         {
-
+            id: 5,
             title: 'MongoDB',
             src: Mongo_logo,
             style: 'shadow-gray-500'
         },
         {
-
+            id: 6,
             title: 'Mysql',
             src: Mysql_logo,
             style: 'shadow-gray-500'
         },
         {
-
+            id: 7,
             title: 'Tailwind CSS',
             src: Tailwind_logo,
             style: 'shadow-gray-500'
         },
         // {
-
+        //     id: 8,
         //     title: 'NPM',
         //     src: NPM_logo,
         //     style: 'shadow-gray-500'
         // },
         // {
-
+        //     id: 9,
         //     title: 'Terminal',
         //     src: Terminal_logo,
         //     style: 'shadow-gray-500'
         // },
 
         // {
+        //     id: 10,
         //     title: 'Github',
         //     src: Githug_logo,
         //     style: 'shadow-gray-500'
