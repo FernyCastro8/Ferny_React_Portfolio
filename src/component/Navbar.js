@@ -10,9 +10,8 @@ function Navbar() {
         {   // looping over the logo
             id: 0,
             logo: [
-                <span>
-                    <a className="sm:hidden"
-                        href="/">
+                <span className="sm:hidden">
+                    <a href="/">
                         <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/RkM/emotional-rescue-personal-use-regular.png" alt="Cursive fonts" />
                     </a>
                 </span>
@@ -79,7 +78,7 @@ function Navbar() {
                                     duration={500}
                                     onClick={() => setNav(false)}
                                 >
-                                    <a href=""> {link}</a>
+                                    <a href=" ? " > {link}</a>
                                 </Link>
                             )}
                         </li>
