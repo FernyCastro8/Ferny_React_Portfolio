@@ -11,7 +11,7 @@ function Contact() {
 
                 <hr />
 
-                <p className="text-xl text-gray-300 pt-5">Submit a form to reach out</p>
+                <p className="text-xl text-gray-300 pt-5">Let's connect</p>
 
                 {/* Getfrom.io  liks to personal email */}
                 <form method="POST"
