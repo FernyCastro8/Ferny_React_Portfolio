@@ -11,7 +11,8 @@ function Navbar() {
             id: 0,
             logo: [
                 <span>
-                    <a href=" ">
+                    <a className="sm:hidden"
+                        href="/">
                         <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRkZGRkZGIiwiYmdjIjoiIzM1M0Q0QiIsInQiOjF9/RkM/emotional-rescue-personal-use-regular.png" alt="Cursive fonts" />
                     </a>
                 </span>

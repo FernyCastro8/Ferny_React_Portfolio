@@ -88,28 +88,25 @@ function Skills() {
 
     return (
 
-        <div title='skills'
-            className="w-full bg-black" >
-
+        <div title='skills' className="w-full bg-black">
             <section className="max-w-screen-lg mx-auto w-full  flex flex-col justify-center p-4 text-white">
-
                 <div>
-                    <p className="text-4xl font-signature  border-b-4 border-gray-500 inline">Skills</p>
-                    <p className="text-gray-300 py-6">Techlogies I've worked with</p>
+                    <p className="text-4xl font-signature border-b-4 border-gray-500 inline">Skills</p>
+                    <p className="text-gray-300 py-6">Technologies I've worked with</p>
                 </div>
 
-                {skills.map(({ id, title, src, style }) => (
-                    <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-6 ms:px-0 pt-2">
-                        <div className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-                            <img key={id} src={src} alt="" className="w-20 mx-auto" />
+                {/* Grid container for all skills */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-6 md:px-0 pt-2">
+                    {skills.map(({ id, title, src, style }) => (
+                        <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
+                            <img src={src} alt={title} className="w-20 mx-auto" />
                             <p className="mt-4">{title}</p>
                         </div>
-                    </div>
-                ))}
-
+                    ))}
+                </div>
             </section>
-
         </div>
+
     )
 }
 
