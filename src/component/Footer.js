@@ -6,30 +6,32 @@ import { AiFillFolder } from 'react-icons/ai';
 // Importing resume
 import resume_pdf from '../assets/resume/RESUME_FernyCastro.pdf'
 
-function displayPDF() {
-    const url = 'https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view?usp=drive_link';
-    const pdfContainer = document.getElementById('pdf-container');
+//==== testing Function to fetch pdf file from google drive
 
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.blob();
-        })
-        .then(blob => {
-            const pdfUrl = URL.createObjectURL(blob);
-            pdfContainer.innerHTML = `<iframe src="${pdfUrl}" width="100%" height="600px"></iframe>`;
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
-}
+// function displayPDF() {
+//     const url = 'https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view?usp=drive_link';
+//     const pdfContainer = document.getElementById('pdf-container');
 
-// Call the function to display the PDF
-displayPDF();
+//     fetch(url)
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error('Network response was not ok');
+//             }
+//             return response.blob();
+//         })
+//         .then(blob => {
+//             const pdfUrl = URL.createObjectURL(blob);
+//             pdfContainer.innerHTML = `<iframe src="${pdfUrl}" width="100%" height="600px"></iframe>`;
+//         })
+//         .catch(error => {
+//             console.error('There was a problem with the fetch operation:', error);
+//         });
+// }
 
-console.log(displayPDF)
+// // Call the function to display the PDF
+// displayPDF();
+
+// console.log(displayPDF)
 
 function Footer() {
 
@@ -68,8 +70,11 @@ function Footer() {
             <section>
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between justify-center">
-                        <div className="flex flex-col items-center mb-4 sm:mb-0 py-3">
-                            <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjoyNDYsInciOjIwMDAsImZzIjoxMjMsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMzUzRDRCIiwidCI6MX0/RkM/emotional-rescue-personal-use-regular.png" className="h-8 mr-3" alt="Ferny Castro Logo" />
+                        <div className="flex flex-col items-center mb-4 sm:mb-0 py-3 ">
+                            <img src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjoyNDYsInciOjIwMDAsImZzIjoxMjMsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMzUzRDRCIiwidCI6MX0/RkM/emotional-rescue-personal-use-regular.png"
+                                className="h-8 mr-3 hidden sm:block"
+                                alt="Ferny Castro Logo" />
+
                             <span className="self-center text-2xl whitespace-nowrap dark:text-gray-400 font-signature">
                                 Ferny Castro
                             </span>

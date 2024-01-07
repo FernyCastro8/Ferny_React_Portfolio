@@ -1,5 +1,5 @@
 import React from "react";
-import { HiArrowSmDown } from "react-icons/hi";
+// import { HiArrowSmDown } from "react-icons/hi";
 // import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
