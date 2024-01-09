@@ -48,8 +48,8 @@ function Header() {
 
     return (
         <div name="header"
-            className=" bg-black bg-gradient-to-b from-black via-neutral-800 to-gray-900 text-white px-10 py-10">
-            <div className="">
+            className=" bg-black bg-gradient-to-b from-black via-neutral-800 to-gray-900 text-white px-10 py-11">
+            <div>
                 <div name="profile_photo"
                     className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row " >
 

@@ -6,13 +6,12 @@ import './index.css'
 // importing Components
 import Navbar from './component/Navbar';
 import Header from './component/Header';
-import AboutME from './component/AboutMe';
-// import Portfolio from './component/Portfolio';
-import Portfolio_2 from './component/Portfolio_2';
+import AboutME from './component/AboutMe'
+import Portfolio_2 from './component/Portfolio';
 import Skilss from './component/Skills';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
-// import Footer_2 from './component/Footer_2';
+
 
 
 function App() {
@@ -27,15 +26,13 @@ function App() {
 
       <Skilss />
 
-      {/* <Portfolio /> */}
-
       <Portfolio_2 />
 
       <Contact />
 
       <Footer />
 
-      {/* <Footer_2 /> */}
+
 
     </div>
   );

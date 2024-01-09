@@ -3,11 +3,11 @@ import React from "react";
 function Contact() {
     return (
         <div name='contact'
-            className="max-h-screen justify-between items-center bg-black text-white text-lg px-10 py-10 pt-10 flex flex-col  font-signature text-justify-center bg-gradient-to-t from-black to-gray-900 ">
+            className="max-h-fit justify-between items-center bg-black text-white text-lg px-10 py-10 pt-10 flex flex-col  font-signature text-justify-center bg-gradient-to-t from-black to-gray-900 ">
 
-            <div className=" w-full h-screen flex flex-col justify-center items-center p-5" >
+            <div className=" w-full  flex flex-col justify-center items-center mt-5 p-5" >
 
-                <p className="text-4xl font-signature  border-b-4 border-gray-500">Contact</p>
+                <h2 className="text-4xl font-signature  border-b-4 border-gray-500">Contact</h2>
 
                 <hr />
 
@@ -16,7 +16,7 @@ function Contact() {
                 {/* Getfrom.io  liks to personal email */}
                 <form method="POST"
                     action="https://getform.io/f/165e4406-11de-4b15-b649-4bc5f1eff271"
-                    className="flex flex-col items-center w-full lg:pb-6 md:w-1/2 pt-5 ">
+                    className="flex flex-col items-center w-full lg:w-1/2 mt-5 ">
 
                     <input
                         type="text"
