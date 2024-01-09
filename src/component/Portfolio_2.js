@@ -69,8 +69,16 @@ function Portfolio_2() {
                                 <div class="absolute inset-0 bg-black bg-opacity-80 transition-all ease-in-out duration-500 opacity-0 group-hover:opacity-100">
                                     <div class="flex items-center justify-center h-full">
                                         <div class="text-center">
-                                            <h2 class="text-2xl font-bold text-white mb-2">Standard Color</h2>
+                                            <h2 class="text-2xl font-bold text-white mb-2">{name}</h2>
                                             <p class="text-lg font-light text-white">Lorem ipsum dolor sit amet, #brands.</p>
+
+                                            <div class="justify-center my-9 select-none flex">
+                                                <button class="py-2 px-4 shadow-md no-underline rounded-full bg-gray-600 text-white  font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-gray-800 focus:outline-none active:shadow-none mx-3">Code</button>
+
+                                                <button class="py-2 px-4 shadow-md no-underline rounded-full bg-gray-600 text-white  font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-gray-800 focus:outline-none active:shadow-none mx-3">Live</button>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
