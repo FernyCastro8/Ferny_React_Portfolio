@@ -1,8 +1,9 @@
 import React from "react";
 
 // importing project images
+import daedauls_Roster from '../assets/projects/daedalus_roster.png'
 import fitnessFusion from '../assets/projects/fitnessfusion.png'
-import Note_taker_1 from '../assets/projects/Note_taker_1.png';
+import Note_taker_1 from '../assets/projects/Note_taker.png';
 // import Social_media_api from '../assets/projects/social_media_api-1080x642.webp';
 // import E_commerce from '../assets/projects/E-commerce_backend.webp';
 // import E_commerce_png from '../assets/projects/E-commerce_backend(resized).png'
@@ -10,26 +11,29 @@ import Note_taker_1 from '../assets/projects/Note_taker_1.png';
 
 // looping over the pojects on the project section
 const projects = [
-    // {
-    //     id: 0,
-    //     name: 'Daedalus Roster',
-    //     image: "",
-    //     demoURL: 'https://note-taker-app-mod11.herokuapp.com/',
-    //     codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git'
-    // },
     {
-        id: 1,
-        name: 'Note Taker',
-        image: Note_taker_1,
+        id: 0,
+        name: 'Daedalus Roster',
+        image: daedauls_Roster,
         demoURL: 'https://note-taker-app-mod11.herokuapp.com/',
-        codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git'
+        codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git',
+        description: ''
     },
     {
-        id: 2,
+        id: 1,
         name: 'Fitness Fusion',
         image: fitnessFusion,
         demoURL: 'https://github.com/FernyCastro8/fitness-fusion-workout-maker/tree/main',
-        codeURL: 'https://fernycastro8.github.io/fitness-fusion-workout-maker/'
+        codeURL: 'https://fernycastro8.github.io/fitness-fusion-workout-maker/',
+        description: ''
+    },
+    {
+        id: 2,
+        name: 'Note Taker',
+        image: Note_taker_1,
+        demoURL: 'https://note-taker-app-mod11.herokuapp.com/',
+        codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git',
+        description: ''
     },
     // {
     //     id: 3,
@@ -39,9 +43,9 @@ const projects = [
     //     codeURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git'
     // },
     // {
-    //     id: 4
+    //     id: 4,
     //     name: 'E-commerce backend API',
-    //     image: [E_commerce],
+    //     image: E_commerce,
     //     demoURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git',
     //     codeURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git'
     // }
