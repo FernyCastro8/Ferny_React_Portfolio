@@ -50,46 +50,34 @@ const projects = [
 function Portfolio_2() {
     return (
 
-        <section name='portfolio'
-            className="min-h-screen px-10 py-10 bg-black bg-gradient-to-b from-black to-gray-900  text-white w-full md:h-screen">
-
-            <div className="max-w-screen-lg mx-auto p-4 m-5 flex flex-col justify-center w-full h-full">
-
-                <div id="portfolio" className="pb-8 mb-5 ">
-                    <p className="text-4xl font-signature font-bold inline border-b-4 border-gray-500">Portfolio</p>
+        <section name="portfolio" class="min-h-screen px-10 py-10 bg-black bg-gradient-to-b from-black to-gray-900 text-white w-full md:h-screen">
+            <div class="max-w-screen-lg mx-auto p-4 m-5 flex flex-col justify-center w-full h-full">
+                <div id="portfolio" class="pb-8 mb-5">
+                    <p class="text-4xl font-signature font-bold inline border-b-4 border-gray-500">Portfolio</p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 hover:scale-100 ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 
-                    {projects.map(({ id, name, image, demoURL, codeURL }) => (
-                        <div key={id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href={demoURL}>
-                                <img className="rounded-t-lg" src={image} alt={name} />
-                            </a>
-                            <div className="p-5">
-                                <a href={demoURL}>
-                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
-                                </a>
-                                <p className="mb-3  font-normal text-gray-700 dark:text-gray-400"> {/* Add project-specific description here */}
-                                </p>
-
-                                <a href={codeURL}
-                                    className="inline-flex items-center px-3 py-2 mr-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Live demo
-                                </a>
-
-                                <a href={codeURL}
-                                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Github repo
-                                </a>
+                    {projects.map(({ id, name, image, demoURL, codeURL }) =>
+                        <div class="py-10 bg-gray-900 shadow-lg rounded-lg overflow-hidden hover:scale-105 duration-500">
+                            <div class="relative overflow-hidden group">
+                                <img src={image} class="w-full h-64 object-cover" alt="Portfolio Item" />
+                                <div class="absolute inset-0 bg-black bg-opacity-80 transition-all ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                    <div class="flex items-center justify-center h-full">
+                                        <div class="text-center">
+                                            <h2 class="text-2xl font-bold text-white mb-2">Standard Color</h2>
+                                            <p class="text-lg font-light text-white">Lorem ipsum dolor sit amet, #brands.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    ))}
+                    )}
 
                 </div>
-
             </div>
         </section>
+
     )
 }
 
