@@ -14,8 +14,6 @@ function AboutMe() {
                     I am an enthusiastic individual who, as a kid, grew up playing sports. This experience helped me develop discipline and other valuable qualities. Through sports, I learned the importance of dedication, teamwork, and perseverance. The challenges and victories on the field instilled in me a strong work ethic and a drive to continuously improve. As a hobby, I also engage in weightlifting to maintain a healthy balance and indulge in my favorite restaurants.
                 </p>
 
-                <br />
-
             </div>
 
         </div >

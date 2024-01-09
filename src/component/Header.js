@@ -48,15 +48,15 @@ function Header() {
 
     return (
         <div name="header"
-            className="h-screen w-full bg-black bg-gradient-to-b from-black via-neutral-800 to-gray-900 text-white px-10"
-        >
-            <div>
+            className=" bg-black bg-gradient-to-b from-black via-neutral-800 to-gray-900 text-white px-10 py-10">
+            <div className="">
                 <div name="profile_photo"
                     className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row " >
 
+                    {/* rendering profilePhoto */}
                     {!isSmallScreen && (
                         <div className="mb-6 md:mb-0 ">
-                            <img src={profilePhoto} alt="profile img" id="profile-img" className="opacity-80  " />
+                            <img src={profilePhoto} alt="profile img" id="profile-img" className="opacity-80" />
                         </div>
                     )}
                     <br />
