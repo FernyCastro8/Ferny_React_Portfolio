@@ -29,9 +29,14 @@ function Footer() {
             id: 4,
             child: <AiFillFolder size={30} />,
             href: resume_pdf,
-            download: 'RESUME_FernyCastro_Links.pdf',
+            // download: 'RESUME_FernyCastro_Links.pdf',
         },
     ];
+
+    // Fetch the URL and open it in a new tab
+    const handleResumeClick = () => {
+        window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank');
+    };
 
     return (
 
@@ -59,7 +64,7 @@ function Footer() {
                             {links.map(({ id, child, href, download }) => (
                                 <li key={id}
                                     className="mr-4 md:mr-6 cursor-pointer hover:scale-110 duration-200 hover:text-white">
-                                    <a href={href} download={download}>
+                                    <a href={href} download={download} onClick={handleResumeClick} >
                                         {child}
                                     </a>
                                 </li>
