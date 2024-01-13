@@ -38,12 +38,11 @@ function Navbar() {
             link: 'contact',
             target: 'contact',
         },
-        // {
-        //     id: 5,
-        //     link: 'resume',
-        //     target: '',
-        //     href: 'https://drive.google.com/file/d/1JB0TImnpD3KVmadcinyYf1ZDauDPzwVM/view?usp=sharing',
-        // }
+        {
+            id: 5,
+            link: 'resume',
+            target: () => { window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank') }
+        }
     ];
 
 
@@ -92,7 +91,7 @@ function Navbar() {
 
             {nav && (
                 <ul className="flex flex-col justify-center items-center absolute py-6 pb-10 top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-900">
-                    {links.map(({ id, link, target, logo }) => (
+                    {links.map(({ id, link, target }) => (
                         <li
                             key={id}
                             className="px-4 py-5 cursor-pointer hover:scale-110 duration-200"

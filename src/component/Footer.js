@@ -3,8 +3,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiFillFolder } from 'react-icons/ai';
 
-// Importing resume
-import resume_pdf from '../assets/resume/RESUME_FernyCastro.pdf'
 
 function Footer() {
 
@@ -23,24 +21,23 @@ function Footer() {
         {
             id: 3,
             child: <HiOutlineMail size={30} />,
-            href: 'mailto:Fernc28@outlook.com',
+            href: 'mailto:Fernycastro28@gmail.com',
         },
         {
             id: 4,
             child: <AiFillFolder size={30} />,
-            href: resume_pdf,
-            // download: 'RESUME_FernyCastro_Links.pdf',
+            // Fetch the URL and open it in a new tab
+            onClick: () => { window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank') }
         },
     ];
 
-    // Fetch the URL and open it in a new tab
-    const handleResumeClick = () => {
-        window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank');
-    };
+    // // Fetch the URL and open it in a new tab
+    // const handleResumeClick = () => {
+    //     window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank');
+    // };
+
 
     return (
-
-
 
         // footer from flowbite.com library
         <footer name="links" className="bg-black p-10 bg-gradient-to-b from-black to-gray-900 max-h-fit ">
@@ -61,7 +58,7 @@ function Footer() {
                         </div>
 
                         <ul className="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                            {links.map(({ id, child, href, download }) => (
+                            {links.map(({ id, child, href, download, handleResumeClick }) => (
                                 <li key={id}
                                     className="mr-4 md:mr-6 cursor-pointer hover:scale-110 duration-200 hover:text-white">
                                     <a href={href} download={download} onClick={handleResumeClick} >

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 // import { HiArrowSmDown } from "react-icons/hi";
 // import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { AiFillFolder } from 'react-icons/ai';
 
 
 import profilePhoto from '../assets/profilePhoto.jpg'
@@ -24,10 +25,11 @@ function Header() {
             href: 'https://www.linkedin.com/in/ferny-castro/',
         },
         {
-            id: 2,
-            child: '',
-            href: ''
-        }
+            id: 4,
+            child: <AiFillFolder size={30} />,
+            // Fetch the URL and open it in a new tab
+            onClick: () => { window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank') }
+        },
     ];
 
     // useState hook to hide the profilePhoto on medium && small screen sizes
@@ -76,10 +78,10 @@ function Header() {
 
                         <div name="links"
                             className="flex justify-center  mt-4">
-                            {links.map(({ id, child, href }) => (
+                            {links.map(({ id, child, href, onClick }) => (
                                 <ul key={id} className="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 ">
                                     <li className="mr-4 md:mr-6 cursor-pointer hover:scale-110 duration-200 hover:text-white">
-                                        <a href={href}>
+                                        <a href={href} onClick={onClick}>
                                             {child}
                                         </a>
                                     </li>
