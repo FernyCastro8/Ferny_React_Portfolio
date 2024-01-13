@@ -6,6 +6,11 @@ import { Link } from "react-scroll";
 function Navbar() {
     const [nav, setNav] = useState(false);
 
+    // Fetch the URL and open it in a new tab
+    const handleResumeClick = () => {
+        window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank');
+    };
+
     const links = [
         {   // looping over the logo
             id: 0,
@@ -41,7 +46,8 @@ function Navbar() {
         {
             id: 5,
             link: 'resume',
-            target: () => { window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank') }
+            target: '',
+            onClick: handleResumeClick  // Use handleResumeClick as onClick handler
         }
     ];
 
@@ -89,9 +95,10 @@ function Navbar() {
                 </div>
             </nav>
 
+            {/* Handle humburger menu bar */}
             {nav && (
                 <ul className="flex flex-col justify-center items-center absolute py-6 pb-10 top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-900">
-                    {links.map(({ id, link, target }) => (
+                    {links.map(({ id, link, target, onClick }) => (
                         <li
                             key={id}
                             className="px-4 py-5 cursor-pointer hover:scale-110 duration-200"
@@ -104,14 +111,18 @@ function Navbar() {
                                 duration={500}
                                 onClick={() => setNav(false)}
                             >
-                                {link}
+                                {/* Use onClick from the links array */}
+                                <a href=" ? " onClick={onClick}>
+                                    {link}
+                                </a>
                             </Link>
                         </li>
                     ))}
                 </ul>
-            )}
+            )
+            }
 
-        </header>
+        </header >
     );
 }
 
