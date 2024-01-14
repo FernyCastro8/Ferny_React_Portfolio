@@ -50,7 +50,7 @@ function Header() {
 
     return (
         <div name="header"
-            className=" bg-black bg-gradient-to-b from-black via-neutral-800 to-gray-900 text-white px-10 py-11">
+            className=" bg-black bg-gradient-to-b from-black via-slate-800 to-gray-900 text-white px-10 py-11">
             <div>
                 <div name="profile_photo"
                     className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row " >
@@ -58,7 +58,7 @@ function Header() {
                     {/* rendering profilePhoto */}
                     {!isSmallScreen && (
                         <div className="mb-6 md:mb-0 ">
-                            <img src={profilePhoto} alt="profile img" id="profile-img" className="opacity-80" />
+                            <img src={profilePhoto} alt="profile img" id="profile-img" className="opacity-80 rounded-full" />
                         </div>
                     )}
                     <br />

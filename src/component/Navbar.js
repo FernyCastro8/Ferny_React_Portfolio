@@ -55,7 +55,7 @@ function Navbar() {
     return (
         <header name="navbar" className="max-h-screen px-10 bg-black text-white capitalize">
             <nav className="flex justify-between py-10 pb-8 items-center">
-                <span className="flex justify-center ">
+                <span className="flex justify-center pl-5">
                     <a href='/'>
                         <img className="cursor-default"
                             alt="logo"
@@ -67,7 +67,7 @@ function Navbar() {
                     {links.map(({ id, link, target, href, onClick }) => (
                         <li
                             key={id}
-                            className="rounded-md ml-8 px-4 border-none text-gray-400 hover:underline hover:text-white hover:scale-105 duration-200"
+                            className="rounded-md ml-8 px-1 border-none text-gray-400 hover:underline hover:text-white hover:scale-105 duration-200"
                         >
                             {onClick ? (
                                 <a href={href}
@@ -111,7 +111,7 @@ function Navbar() {
                                 duration={500}
                                 onClick={() => setNav(false)}
                             >
-                                {/* Use onClick from the links array */}
+                                {/* onClick from the links array */}
                                 <a href=" ? " onClick={onClick}>
                                     {link}
                                 </a>

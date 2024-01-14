@@ -88,7 +88,7 @@ function Skills() {
 
     return (
 
-        <div title='skills' className="w-full bg-black">
+        <div title='skills' className="w-full bg-gradient-to-r from-gray-900 to-gray-900">
             <section className="max-w-screen-lg mx-auto w-full  flex flex-col justify-center p-4 text-white">
                 <div>
                     <p className="text-4xl font-signature border-b-4 border-gray-500 inline">Skills</p>

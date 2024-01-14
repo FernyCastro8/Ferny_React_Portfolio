@@ -40,7 +40,7 @@ function Footer() {
     return (
 
         // footer from flowbite.com library
-        <footer name="links" className="bg-black p-10 bg-gradient-to-b from-black to-gray-900 max-h-fit ">
+        <footer name="links" className="bg-black p-10 max-h-fit ">
 
             <p className="text-4xl font-signature text-white border-b-4 border-gray-500 inline-block lg:pt-5">Links</p>
 
