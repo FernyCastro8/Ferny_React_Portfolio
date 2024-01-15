@@ -91,4 +91,5 @@ Copyright (c) 2023 Ferny Castro
 ---
 
 ### Demo
-![Screen Shot 2023-08-03 at 11 40 29 PM](https://github.com/FernyCastro8/Ferny_React_Portfolio/assets/124219457/698d0445-d379-44dc-9c1f-a0a23fc92343)
+<img width="1108" alt="portfolio_icon" src="https://github.com/FernyCastro8/Ferny_React_Portfolio/assets/124219457/b0a3e6c4-ca3f-43af-a4ce-4f1e0f1e90df">
+
