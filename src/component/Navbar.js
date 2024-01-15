@@ -67,7 +67,7 @@ function Navbar() {
                     {links.map(({ id, link, target, href, onClick }) => (
                         <li
                             key={id}
-                            className="rounded-md ml-8 px-1 border-none text-gray-400 hover:underline hover:text-white hover:scale-105 duration-200"
+                            className="rounded-md ml-5 px-1 border-none text-gray-400 hover:underline hover:text-white hover:scale-105 duration-200"
                         >
                             {onClick ? (
                                 <a href={href}

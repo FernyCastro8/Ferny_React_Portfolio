@@ -70,7 +70,7 @@ function Header() {
 
                         <p className="text-2xl text-gray-300 font-signature ">I'm a Full Stack Developer</p>
 
-                        <p className="text-gray-400 py-4">
+                        <p className="text-gray-300 py-4">
                             I'm a passionate Web
                             Deverloper building Web Apps from scratch using technology tools like to
                             illustrate my craft. I specialize in all aspects of web development from front-end coding to back-end database development. My core skills include coding in JavaScript, React, and HTML/CSS. I also have experience with Node.js, Express, MongoDB, and MySQL.

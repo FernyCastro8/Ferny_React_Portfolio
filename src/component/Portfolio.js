@@ -64,7 +64,7 @@ function Portfolio() {
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 overflow-auto">
 
                     {projects.map(({ id, name, image, description, demoURL, codeURL }) =>
-                        <div key={id} class="py-10 px-1 bg-gray-800 shadow-lg rounded-lg  hover:scale-105 duration-500">
+                        <div key={id} class="py-8 px-1 bg-gray-800 shadow-lg rounded-lg  hover:scale-105 duration-500">
                             <div class="relative group">
                                 <img src={image} class="w-full h-64 object-cover rounded-lg" alt="Portfolio Item" />
                                 <div class="absolute inset-0 bg-black bg-opacity-80 transition-all ease-in-out duration-500 opacity-0 group-hover:opacity-100">
