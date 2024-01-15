@@ -4,9 +4,8 @@ import React from "react";
 import daedauls_Roster from '../assets/projects/daedalus_roster.png'
 import fitnessFusion from '../assets/projects/fitnessfusion.png'
 import Note_taker from '../assets/projects/Note_taker.png';
-// import Social_media_api from '../assets/projects/social_media_api-1080x642.webp';
-// import E_commerce from '../assets/projects/E-commerce_backend.webp';
 import E_commerce_png from '../assets/projects/E-commerce_backend(resized).png'
+import Social_media_api from '../assets/projects/social_media_api-1080x642.webp';
 
 
 // looping over the pojects on the project section
@@ -17,15 +16,15 @@ const projects = [
         image: daedauls_Roster,
         demoURL: 'https://note-taker-app-mod11.herokuapp.com/',
         codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git',
-        description: ''
+        description: 'A full MERN Stack Web App with user authentication, Daedalus Roster is an easy-to-use app that helps freelancers find jobs and lets businesses hire skilled workers.'
     },
     {
         id: 1,
         name: 'Fitness Fusion',
         image: fitnessFusion,
-        demoURL: 'https://github.com/FernyCastro8/fitness-fusion-workout-maker/tree/main',
-        codeURL: 'https://fernycastro8.github.io/fitness-fusion-workout-maker/',
-        description: ''
+        demoURL: 'https://fernycastro8.github.io/fitness-fusion-workout-maker/',
+        codeURL: 'https://github.com/FernyCastro8/fitness-fusion-workout-maker/tree/main',
+        description: 'Site created a site using JavaScript, jQuery, HTML, CSS, Tailwind(framework), and NinjaAPI!'
     },
     {
         id: 2,
@@ -33,22 +32,25 @@ const projects = [
         image: Note_taker,
         demoURL: 'https://note-taker-app-mod11.herokuapp.com/',
         codeURL: 'https://github.com/FernyCastro8/Note_Taker_app-mod11.git',
-        description: ''
+        description: 'Built with Node.js and Express, allows users to create, retrieve, and delete notes. A convenient way to jot down important information, tasks, or ideas.'
     },
     {
         id: 4,
         name: 'E-commerce backend API',
         image: E_commerce_png,
         demoURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git',
-        codeURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git'
+        codeURL: 'https://github.com/FernyCastro8/E-commerce-Back-End_mod13.git',
+        description: 'Mongoose Object Data Modeling (ODM) REST API. Utilizing NoSQL databases, built with Express.js, MongoDB, and Mongoose ODM. Guarantees scalability and efficient data management.'
     },
-    // {
-    //     id: 3,
-    //     name: 'Social Media Api',
-    //     image: Social_media_api,
-    //     demoURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
-    //     codeURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git'
-    // }
+    {
+        id: 3,
+        name: 'Social Media Api',
+        image: Social_media_api,
+        demoURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
+        codeURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
+        description: 'Object Relational Mapping ( ORM ). Leverages SQL databases, Powered by Express.js for seamless routing and it employs MySQL and sequelize 5.21.7 to ensure scalability and streamlined data handlings'
+
+    }
 ];
 
 function Portfolio() {
@@ -71,15 +73,17 @@ function Portfolio() {
                                     <div class="flex items-center justify-center h-full">
                                         <div class="text-center">
                                             <h2 class="text-2xl font-bold text-white mb-2">{name}</h2>
-                                            <p class="text-lg font-light text-white">Lorem ipsum dolor sit amet, #brands.{description}</p>
+                                            <p class="text-lg font-light text-white">{description}</p>
 
                                             <div class="justify-center my-9 select-none flex">
-                                                <button
-                                                    class="py-2 px-4 shadow-md no-underline rounded-full bg-gray-600 text-white  font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-gray-800 focus:outline-none active:shadow-none mx-3">Code</button>
-
-                                                <button
-                                                    class="py-2 px-4 shadow-md no-underline rounded-full bg-gray-600 text-white  font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-gray-800 focus:outline-none active:shadow-none mx-3">Demo</button>
-
+                                                <a href={codeURL} target="_blank" rel="noopenner noreferrer">
+                                                    <button
+                                                        class="py-2 px-4 shadow-md no-underline rounded-full bg-gray-600 text-white  font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-gray-800 focus:outline-none active:shadow-none mx-3">Code</button>
+                                                </a>
+                                                <a href={demoURL} target="_blank" rel="noopenner noreferrer">
+                                                    <button
+                                                        class="py-2 px-4 shadow-md no-underline rounded-full bg-gray-600 text-white  font-semibold text-sm border-orange btn-primary hover:text-white hover:bg-gray-800 focus:outline-none active:shadow-none mx-3">Demo</button>
+                                                </a>
                                             </div>
 
                                         </div>
@@ -88,7 +92,6 @@ function Portfolio() {
                             </div>
                         </div>
                     )}
-
                 </div>
             </div>
         </section>
