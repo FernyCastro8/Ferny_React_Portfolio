@@ -46,8 +46,8 @@ function Navbar() {
         {
             id: 5,
             link: 'resume',
-            target: '',
-            onClick: handleResumeClick  // Use handleResumeClick as onClick handler
+            target: 'resume',
+            onClick: handleResumeClick  // Used handleResumeClick function as onClick handler
         }
     ];
 
@@ -83,7 +83,7 @@ function Navbar() {
                                     duration={500}
                                     onClick={() => setNav(false)}
                                 >
-                                    <a href=" ? " > {link}</a>
+                                    <a href=" # " > {link}</a>
                                 </Link>
                             )}
                         </li>

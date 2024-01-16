@@ -31,12 +31,6 @@ function Footer() {
         },
     ];
 
-    // // Fetch the URL and open it in a new tab
-    // const handleResumeClick = () => {
-    //     window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank');
-    // };
-
-
     return (
 
         // footer from flowbite.com library
@@ -48,7 +42,7 @@ function Footer() {
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between justify-center">
                         <div className="flex flex-col items-center mb-4 sm:mb-0 py-3 ">
-                            <img className="h-8 mr-3 hidden sm:block"
+                            <img className="h-8 mr-3 hidden sm:block "
                                 src="https://see.fontimg.com/api/renderfont4/PKY87/eyJyIjoiZnMiLCJoIjoyNDYsInciOjIwMDAsImZzIjoxMjMsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMzUzRDRCIiwidCI6MX0/RkM/emotional-rescue-personal-use-regular.png"
                                 alt="Ferny Castro Logo" />
 
