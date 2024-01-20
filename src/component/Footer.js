@@ -26,7 +26,7 @@ function Footer() {
         {
             id: 4,
             child: <AiFillFolder size={30} />,
-            // Fetch the URL and open it in a new tab
+            // Fetch Resume the URL and open it in a new tab
             onClick: () => { window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank') }
         },
     ];
