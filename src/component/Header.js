@@ -16,17 +16,17 @@ function Header() {
     const links = [
         {
             id: 1,
-            child: <FaGithub size={30} />,
+            icon: <FaGithub size={30} />,
             href: 'https://github.com/FernyCastro8',
         },
         {
             id: 2,
-            child: <FaLinkedin size={30} />,
+            icon: <FaLinkedin size={30} />,
             href: 'https://www.linkedin.com/in/ferny-castro/',
         },
         {
             id: 4,
-            child: <AiFillFolder size={30} />,
+            icon: <AiFillFolder size={30} />,
             // Fetch the URL and open it in a new tab
             onClick: () => { window.open('https://drive.google.com/file/d/1TvcItM03LsRcGmlPEmLP-zvN7xeZzIuT/view', '_blank') }
         },
@@ -47,6 +47,7 @@ function Header() {
             window.removeEventListener('resize', checkScreenSize);
         };
     }, []);
+
 
     return (
         <div name="header"
@@ -78,11 +79,11 @@ function Header() {
 
                         <div name="links"
                             className="flex justify-center  mt-4">
-                            {links.map(({ id, child, href, onClick }) => (
+                            {links.map(({ id, icon, href, onClick }) => (
                                 <ul key={id} className="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 ">
                                     <li className="mr-4 md:mr-6 cursor-pointer hover:scale-110 duration-200 hover:text-white">
                                         <a href={href} onClick={onClick}>
-                                            {child}
+                                            {icon}
                                         </a>
                                     </li>
                                 </ul>
