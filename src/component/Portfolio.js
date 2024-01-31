@@ -63,7 +63,7 @@ function Portfolio() {
                     <p class="text-4xl font-signature font-bold inline border-b-4 border-gray-500">Portfolio</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 overflow-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 sm:grid-cols-2 sm:px-0 overflow-auto">
 
                     {projects.map(({ id, name, image, description, demoURL, codeURL }) =>
                         <div key={id} class="py-8 px-1 bg-gray-800 shadow-lg rounded-lg  hover:scale-105 duration-500">
