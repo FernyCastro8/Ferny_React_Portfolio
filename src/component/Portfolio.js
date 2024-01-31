@@ -57,7 +57,7 @@ function Portfolio() {
     return (
 
         <section name="portfolio"
-            class="min-h-screen px-10 py-10 bg-black bg-gradient-to-b from-slate-900 to-gray-900 text-white w-full md:h-screen">
+            class="min-h-screen px-5 py-10 bg-black bg-gradient-to-b from-slate-900 to-gray-900 text-white w-full md:h-screen">
             <div class="max-w-screen-lg mx-auto p-4 m-5 flex flex-col justify-center w-full h-full">
                 <div id="portfolio" class="pb-8 mb-5">
                     <p class="text-4xl font-signature font-bold inline border-b-4 border-gray-500">Portfolio</p>
