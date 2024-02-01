@@ -48,7 +48,7 @@ const projects = [
         image: Social_media_api,
         demoURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
         codeURL: 'https://github.com/FernyCastro8/Social_Network_API-mod18.git',
-        description: 'Object Relational Mapping ( ORM ). Leverages SQL databases, Powered by Express.js for seamless routing and it employs MySQL and sequelize 5.21.7 to ensure scalability and streamlined data handlings'
+        description: 'Object Relational Mapping ( ORM ). Leverages SQL databases, Powered by Express.js and employs MySQL and sequelize 5.21.7 to ensure scalability and streamlined data handlings'
 
     }
 ];
