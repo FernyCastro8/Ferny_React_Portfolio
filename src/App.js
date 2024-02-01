@@ -7,7 +7,7 @@ import './index.css'
 import Navbar from './component/Navbar';
 import Header from './component/Header';
 import AboutME from './component/AboutMe'
-import Portfolio_2 from './component/Portfolio';
+import Portfolio from './component/Portfolio';
 import Skills from './component/Skills';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
@@ -26,7 +26,7 @@ function App() {
 
       <Skills />
 
-      <Portfolio_2 />
+      <Portfolio />
 
       <Contact />
 
