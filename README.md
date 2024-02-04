@@ -7,7 +7,7 @@
 Built with React JS, My personal portfolio is a web app online resume where I showcase my skills, projects, and accomplishments.
 The portfolio looks modern and cool, and it shows that Im good at creating websites.
 People who visit the portfolio can check out my work, read about me, and easily get in touch with me if they want to work together.
-The website is easy to use and looks great on any device. Its a way for me to show off what I can do as a developer!
+The website is easy to use and looks great on any device.
 ```
 
 ### Visit deployed 🔗 [Link](https://fernycastro.com/)
