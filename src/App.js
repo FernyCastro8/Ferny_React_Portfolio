@@ -3,14 +3,16 @@ import './index.css'
 // import { Routes, Route, Navigate } from 'react-dom';
 // import { Navelink } from 'react-router-dom';
 
-// Components
+// importing Components
 import Navbar from './component/Navbar';
 import Header from './component/Header';
-import AboutME from './component/AboutMe';
+import AboutME from './component/AboutMe'
 import Portfolio from './component/Portfolio';
+import Skills from './component/Skills';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
-import Footer_Flowbite from './component/Footer_Flowbite';
+
+
 
 function App() {
   return (
@@ -22,13 +24,13 @@ function App() {
 
       <AboutME />
 
+      <Skills />
+
       <Portfolio />
 
       <Contact />
 
-      {/* <Footer /> */}
-
-      <Footer_Flowbite />
+      <Footer />
 
     </div>
   );
