@@ -1,10 +1,13 @@
 # Ferny's React Portfolio
 
+
 ## Description
 
 ```javascript
 Built with React JS, My personal portfolio is a web app online resume where I showcase my skills, projects, and accomplishments. The portfolio looks modern and cool, and it shows that Im good at creating websites. People who visit the portfolio can check out my work, read about me, and easily get in touch with me if they want to work together. The website is easy to use and looks great on any device. Its a way for me to show off what I can do as a developer!
 ```
+
+### Visit deployed 🔗 [Link](https://fernycastro.com/)
 
 ### Table of Contents
 
@@ -28,7 +31,6 @@ Built with React JS, My personal portfolio is a web app online resume where I sh
 
 #### Modules / Packages / Dependencies**
 
-- Node 18.5.0
 - React js 5.0.1
 
 ---
@@ -147,6 +149,7 @@ This section has moved here: <https://facebook.github.io/create-react-app/docs/t
 
 🔗 [Linkedin](https://www.linkedin.com/in/ferny-castro/)
 
+
 🔗 [Portfolio Website](https://fernycastro.com/)
 
 ---
@@ -157,9 +160,10 @@ MIT License
 
 Copyright (c) 2023 Ferny Castro
 
-🔗 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
 ### Demo
+
 <img width="1108" alt="portfolio_landing-page" src="https://github.com/FernyCastro8/Ferny_React_Portfolio/assets/124219457/57e54cba-6d1f-42c6-aa43-16bbf6dc2715">
